@@ -1,5 +1,5 @@
-Search Engine
-=============================
+SEARCH ENGINE
+=============
 First decompress the testCollection.dat.7z file to obtain the test collection.
 
 To run the create index program issue the command:
@@ -10,7 +10,7 @@ testCollection.dat is the collection file
 testIndex.dat is the output of the program which is the inverted index
 
 
----------------------------------(tf/idf)---------------------------------------
+[tf/idf]
 First decompress the testCollection.dat, stopWords.dat and porterStemmer.py 
 First run the create index program:
 python createIndex_tfidf.py stopWords.dat testCollection.dat testIndex.dat titleIndex.dat
@@ -24,8 +24,7 @@ testIndex.dat is the main inverted index
 titleIndex.dat is the title index
 
 
---------------------------------------------------------------------------------------------------
-Basic Steps in search Engine
+Steps involved in search Engine Implementaion
 basic steps
 -------------------
 1.  Tokenizing
