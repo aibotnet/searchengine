@@ -90,10 +90,10 @@ class CreateIndex:
 
     def getParams(self):
         '''get the parameters stopwords file, collection file, and the output index file'''
-        self.stopwordsFile  = 'stopwords.dat'
-        self.collectionFile = 'testCollection.dat'
-        self.indexFile      = 'indexFile.dat'
-        self.titleIndexFile = 'indexFiletfidf.dat'
+        self.stopwordsFile  = '/filepath/stopwords.dat'
+        self.collectionFile = '/filepath/testCollection.dat'
+        self.indexFile      = '/filepath/indexFile.dat'
+        self.titleIndexFile = '/filepath/indexFiletfidf.dat'
         
 
     def createIndex(self):
