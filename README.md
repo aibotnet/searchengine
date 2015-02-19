@@ -11,6 +11,7 @@ testIndex.dat is the output of the program which is the inverted index
 
 
 [tf/idf]
+
 First decompress the testCollection.dat, stopWords.dat and porterStemmer.py 
 First run the create index program:
 python createIndex_tfidf.py stopWords.dat testCollection.dat testIndex.dat titleIndex.dat
