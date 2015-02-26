@@ -10,6 +10,7 @@ porter=PorterStemmer()
 class CreateIndex:
 
     def __init__(self):
+	'''Default Dict : '''
         self.index=defaultdict(list)    # the inverted index
 
     
