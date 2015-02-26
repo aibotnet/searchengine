@@ -72,8 +72,8 @@ class CreateIndex:
         '''get the parameters stopwords file, collection file, and the output index file'''
         param=sys.argv
         self.stopwordsFile='stopwords.dat'
-        self.collectionFile='testCollectiontemp.dat'
-        self.indexFile='indexFile.dat'
+        self.collectionFile='/home/vkthakur/Downloads/createIndex_workspace/testCollection.dat'
+        self.indexFile='/home/vkthakur/Downloads/createIndex_workspace/indexFile.dat'
         
 
     def createIndex(self):
