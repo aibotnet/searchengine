@@ -58,13 +58,71 @@
           If the crawler is performing archiving of websites it copies and saves the information as it goes. Such archives are usually stored such that they
           can be viewed, read and navigated as they were on the live web, but are preserved as ‘snapshots'. The number of possible URLs crawled being generated
           by server-side software has also made it difficult for web crawlers to avoid retrieving duplicate content.<br>
-          Crawling policy[The behavior of a Web crawler is the outcome of a combination of policies]<br>
-          <div style="margin-left:40px">
-          a) Selection policy that states which pages to download.<br>
-          b) Re-visit policy that states when to check for changes to the pages.<br>
-          c) Politeness policy that states how to avoid overloading Web sites.<br>
-          d) Parallelization policy that states how to coordinate distributed web crawlers.<br>
           </div>
+          <font size="5" style="color:darkblue;">
+          Crawling policy[The behavior of a Web crawler is the outcome of a combination of policies]<br>
+          </font>
+          <font face="Arial" size="4">
+            <div style="margin-left:40px">
+              a) Selection policy that states which pages to download.<br>
+              b) Re-visit policy that states when to check for changes to the pages.<br>
+              c) Politeness policy that states how to avoid overloading Web sites.<br>
+              d) Parallelization policy that states how to coordinate distributed web crawlers.<br>
+            </div>
+          </font>
+          <font size="5" style="color:darkblue;">
+          Selection policy<br>
+          </font>
+          <font face="Arial" size="4">
+          Given the current size of the Web, even large search engines cover only a portion of the publicly available part.
+          A 2009 study showed that large-scale search engines index no more than 40-70% of the indexable Web; a previous 
+          study by Steve Lawrence and Lee Giles showed that no search engine indexed more than 16% of the Web in 1999.
+          As a crawler always downloads just a fraction of the Web pages, it is highly desirable that the downloaded 
+          fraction contains the most relevant pages and not just a random sample of the Web.
+          This requires a metric of importance for prioritizing Web pages. The importance of a page is a function of its 
+          intrinsic quality, its popularity in terms of links or visits, and even of its URL (the latter is the case of 
+          vertical search engines restricted to a single top-level domain, or search engines restricted to a fixed Web site). 
+          Designing a good selection policy has an added difficulty: it must work with partial information, as the complete 
+          set of Web pages is not known during crawling
+          </font>
+          <font size="5" style="color:darkblue;">
+          URL Normalization<br>
+          </font>
+          <font face="Arial" size="4">
+          Crawlers usually perform some type of URL normalization in order to avoid crawling the same resource more than once.
+          The term URL normalization, also called URL canonicalization, refers to the process of modifying and standardizing 
+          a URL in a consistent manner. There are several types of normalization that may be performed including conversion 
+          of URLs to lowercase, removal of "." and ".." segments, and adding trailing slashes to the non-empty path 
+          component.
+          </font>
+          <font size="5" style="color:darkblue;">
+          Path-Ascending Crawling<br>
+          </font>
+          <font face="Arial" size="4">
+          Some crawlers intend to download as many resources as possible from a particular web site. So path-ascending crawler
+          was introduced that would ascend to every path in each URL that it intends to crawl. For example, when given a seed
+          URL of http://llama.org/hamster/monkey/page.html, it will attempt to crawl /hamster/monkey/, /hamster/, and /. 
+          Cothey found that a path-ascending crawler was very effective in finding isolated resources, or resources for 
+          which no inbound link would have been found in regular crawling.
+          </font>
+          <font size="5" style="color:darkblue;">
+          URL Normalization<br>
+          </font>
+          <font face="Arial" size="4">
+          Crawlers usually perform some type of URL normalization in order to avoid crawling the same resource more than once.
+          The term URL normalization, also called URL canonicalization, refers to the process of modifying and standardizing 
+          a URL in a consistent manner. There are several types of normalization that may be performed including conversion 
+          of URLs to lowercase, removal of "." and ".." segments, and adding trailing slashes to the non-empty path 
+          component.
+          </font>
+          <font size="5" style="color:darkblue;">
+          Focused crawling<br>
+          </font>
+          <font face="Arial" size="4">
+          The importance of a page for a crawler can also be expressed as a function of the similarity of a page to a given 
+          query. Web crawlers that attempt to download pages that are similar to each other are called focused crawler or 
+          topical crawlers. The concepts of topical and focused crawling were first introduced by Filippo Menczer
+          and by Soumen Chakrabarti.
           </font>
         </p>
 
