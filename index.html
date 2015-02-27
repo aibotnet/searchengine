@@ -36,7 +36,7 @@
             A search engine is a software program or script available through the Internet that searches documents and files for keywords and returns the results of any files
             containing those keywords. The first search engine ever developed is considered Archie, which was used to search for FTP files and the first text-based search
             engine is considered Veronica.Because large search engines contain millions and sometimes billions of pages, many search engines not only just search the pages
-            but also display the results depending upon their importance. This importance is commonly determined by using various algorithms.<br>
+            but also display the results depending upon their importance. This importance is commonly determined by using various algorithms.<br><br>
         </font>
         <font size="5" style="color:darkblue;">Steps Involved In Search Engine</font><br>
           <div style="margin-left: 40px;">
@@ -130,17 +130,27 @@
           Most academic papers are published in PDF formats, such kind of crawler is particularly interested in 
           crawling PDF, PostScript files, Microsoft Word including their zipped formats. Because of this, general open 
           source crawlers, such as Heritrix, must be customized to filter out other MIME types, or a middleware is used 
-          to extract these documents out and import them to the focused crawl database and repository. Identifying whether 
-          these documents are academic or not is challenging and can add a significant overhead to the crawling process, 
-          so this is performed as a post crawling process using machine learning or regular expression algorithms. These 
-          academic documents are usually obtained from home pages of faculties and students or from publication page of 
-          research institutes. Because academic documents takes only a small fraction in the entire web pages, a good seed 
-          selection are important in boosting the efficiencies of these web crawlers. Other academic crawlers may download 
-          plain text and HTML files, that contains metadata of academic papers, such as titles, papers, and abstracts. This 
-          increases the overall number of papers, but a significant fraction may not provide free PDF downloads.
+          to extract these documents out and import them to the focused crawl database and repository.<br>
+          </font>
+          <font size="4" style="color:darkblue;">
+          Re-Visit Policy<br>
+          </font>
+          <font face="Arial" size="3">
+          The Web has a very dynamic nature, and crawling a fraction of the Web can take weeks or months. By the time a Web 
+          crawler has finished its crawl, many events could have happened, including creations, updates and deletions.<br>
+          From the search engine's point of view, there is a cost associated with not detecting an event, and thus having an 
+          outdated copy of a resource. The most-used cost functions are freshness and age.<br>
+
+          Freshness: This is a binary measure that indicates whether the local copy is accurate or not. The freshness of a 
+          page p in the repository at time t is defined as:<br>
+          F_p(t) = \begin{cases} 1 & {\rm
+          if}~p~{\rm~is~equal~to~the~local~copy~at~time}~t\\ 0 & {\rm otherwise} \end{cases}
+          Age: This is a measure that indicates how outdated the local copy is. The age of a page p in the repository, at time
+          t is defined as:<br>
+          A_p(t) =  \begin{cases} 0  & {\rm if}~p~{\rm~is~not~modified~at~time}~t\\ t - {\rm modification~time~of}~p &
+          {\rm otherwise} \end{cases}
           </font>
         </p>
-
         <p align="center"><font face="Arial" size="2" style="margin-bottom:10px">For python code please visit
         <a> https://github.com/vikasdumca/SearchEngine</a>
         </font></td>
