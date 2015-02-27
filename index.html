@@ -130,7 +130,7 @@
           Most academic papers are published in PDF formats, such kind of crawler is particularly interested in 
           crawling PDF, PostScript files, Microsoft Word including their zipped formats. Because of this, general open 
           source crawlers, such as Heritrix, must be customized to filter out other MIME types, or a middleware is used 
-          to extract these documents out and import them to the focused crawl database and repository.<br>
+          to extract these documents out and import them to the focused crawl database and repository.<br><br>
           </font>
           <font size="4" style="color:darkblue;">
           Re-Visit Policy<br>
@@ -143,12 +143,10 @@
 
           Freshness: This is a binary measure that indicates whether the local copy is accurate or not. The freshness of a 
           page p in the repository at time t is defined as:<br>
-          F_p(t) = \begin{cases} 1 & {\rm
-          if}~p~{\rm~is~equal~to~the~local~copy~at~time}~t\\ 0 & {\rm otherwise} \end{cases}
+          F_b(t)={1 if p is equal to local copy at time t, 0 otherwise}
           Age: This is a measure that indicates how outdated the local copy is. The age of a page p in the repository, at time
           t is defined as:<br>
-          A_p(t) =  \begin{cases} 0  & {\rm if}~p~{\rm~is~not~modified~at~time}~t\\ t - {\rm modification~time~of}~p &
-          {\rm otherwise} \end{cases}
+          A_p(t) ={0 if p is not modified at time t,t - modification time of p otherwise}
           </font>
         </p>
         <p align="center"><font face="Arial" size="2" style="margin-bottom:10px">For python code please visit
